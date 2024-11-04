@@ -5,65 +5,100 @@ using UnityEngine;
 public class Geral : MonoBehaviour
 {
 
-    //!= diferente
+    /*
+       Operadores relacionais
 
-    //public string variavelPublica;
+       == (igual)
+       != (diferente)
+       >  (Maior que)
+       <  (Menor que)
+       <= (Menor igual)
+       >= (Maior igual)
 
-    //private string variavelPrivada;
+       Operadores Lógicos
 
-    //[SerializeField]private int vidaJogador = 10;
+       && (E/ AND)
+       || (OU / OR)
+       ! (NÃO / NOT)
 
-    //float velocidadecarro = 125.5f;
+       Variáveis
 
-    //string nomejogador = "tadala";
+       int vidaPlayer = 10;
+       float velocidadePlayer = 50.2f;
+       bool mortePlayer = true;
+       string nomePlayer = "Tadola";
+       char apelido = 'A';
+   */
 
-    //char apelido = 't';
+    //[SerializeField] int vidaHeroi = 100;
+    //[SerializeField] int vidaVilao = 300;
+    //string resultado;
 
-    // verdadeiro ou falso
-    //bool vivo = true;
-
-    public int vida_Jogador;
-
-
-    [SerializeField] int vidaHeroi = 100;
-    [SerializeField] int vidaVilao = 300;
+    [SerializeField] int estadoVilao = 1;
 
     void Start()
     {
-        //Debug.Log(vidaJogador);
-        //print(vidaJogador);
+        //print(vidaVilao == vidaHeroi);//false
+        //print(vidaHeroi <= vidaVilao);//true
+        //print(vidaVilao != vidaHeroi);//true
 
-
-
-        print(vidaVilao == vidaHeroi); //false
-        print(vidaHeroi <= vidaVilao); //true
-        print(vidaVilao != vidaHeroi); //true
-        int resultado;
-
-        //Operador Ternário
-        // Condição ? valor a ser atribuido caso seja verdadeiro : caso seja falso
-        //resultado = vidaHeroi < vidaVilao ? "Vida Heroi Menor" : "Vida Vilao Maior";
+        //Operador ternário
+        //codição ? valor a ser atribuido caso verdadeiro : caso falso
+        //resultado = vidaHeroi < vidaVilao ? "Vida Heroi Menor" : "Vida Heroi Maior";
 
         //print(resultado);
 
-        //if (vidaHeroi < vidaVilao)
+        //Estrutura condicional
+        //if(vidaHeroi < vidaVilao)
         //{
         //    resultado = "Vida Heroi Menor";
         //    print(resultado);
+
         //}
-        //else if (vidaHeroi == vidaVilao)
+        //else if(vidaHeroi == vidaVilao)
         //{
         //    resultado = "Vida Heroi igual a vida Vilao";
         //    print(resultado);
+
         //}
         //else
         //{
+        //    resultado = "Vida Heroi Maior";
+        //    print(resultado);
         //}
 
+        //estado 01: vilão ataca
+        //estado 02: vilão defende
+        //estado 03: vilão toma dano
+
+        switch (estadoVilao)
+        {
+            case 1:
+                print("Vilaão atacando");
+                if (true)
+                {
+                    print("Danoo");
+                }
+                break;
+
+            case 2:
+                print("Vilão defende");
+                break;
+
+
+            case 3:
+                print("Vilão tomando um coro");
+                break;
+
+            default:
+                print("Valor não identificado");
+                break;
+        }
+
+    }
         void Update()
         {
 
 
         }
-    }
 }
