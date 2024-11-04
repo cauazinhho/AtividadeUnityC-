@@ -2346,6 +2346,7 @@ GameObject:
   - component: {fileID: 1964539974}
   - component: {fileID: 1964539973}
   - component: {fileID: 1964539976}
+  - component: {fileID: 1964539977}
   m_Layer: 0
   m_Name: knight_f_run_anim_f1 (1)
   m_TagString: Untagged
@@ -2482,6 +2483,19 @@ CircleCollider2D:
   m_Offset: {x: 0.032861605, y: -0.102328226}
   serializedVersion: 2
   m_Radius: 0.19957717
+--- !u!114 &1964539977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964539972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbbf9386534a8a4db1f4856a8feb64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pocaoVida: 1
 --- !u!1 &2064568299
 GameObject:
   m_ObjectHideFlags: 0
