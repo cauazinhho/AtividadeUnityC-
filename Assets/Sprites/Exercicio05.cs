@@ -10,21 +10,25 @@ public class Exercicio05 : MonoBehaviour
     //exiba "Missão bem-sucedida"; caso contrário, "Missão
     //incompleta".
 
-    [SerializeField] int pontuacao = 50;
+    [SerializeField] int pontuacao = 0;
 
     void Start()
     {
-        if (pontuacao < 50)
-        {
-            print("Missão Incompleta");
-        }
-        else 
+        if (pontuacao >= 50)
         {
             print("Missão bem-sucedida");
         }
+        else 
+        {
+            print("Missão incompleta");
+        }
+
+        // condicao ? caso vdd : caso falso
+        // print(pontos>= ? "Missão bem-sucedida" : "Missão incompleta");
+
     }
 
-    
+
     void Update()
     {
         

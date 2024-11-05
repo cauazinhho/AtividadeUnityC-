@@ -8,20 +8,24 @@ public class Exercicio04 : MonoBehaviour
     //no inventário.Verifique se o jogador possui uma "Poção de Vida".
     //Se possuir, exiba "Usando Poção de Vida"; caso contrário, "Poção
     //indisponível".
+
     [SerializeField] bool pocaoVida;
-    
+    string resultado;
     void Start()
     {
-        if (pocaoVida == true)
-        {
-            print("Usando Poção de Vida");
-        }
-        else 
-        {
-            print("Poção Indisponível");
-        }
-        
-        
+        print(resultado = pocaoVida ? "Usando Poção de Vida" : "Poção indisponível");
+
+
+        //if (pocaoVida) //Nao precisa colocar o == true, pq ja vem como padrão
+        //{
+        //    print("Usando Poção de Vida");
+        //}
+        //else 
+        //{
+        //    print("Poção Indisponível");
+        //}
+
+
     }
 
     

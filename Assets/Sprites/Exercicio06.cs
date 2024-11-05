@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Exercicio06 : MonoBehaviour
@@ -9,29 +10,45 @@ public class Exercicio06 : MonoBehaviour
     //jogador selecionar Guerreiro e "Mago escolhido" se selecionar
     //Mago.
 
-    //[SerializeField] int Guerreiro;
-    //[SerializeField] int Mago;
-    [SerializeField] int Personagem;
+    [SerializeField] bool Guerreiro;
+    [SerializeField] bool Mago;
+    //[SerializeField] int Personagem;
 
     void Start()
     {
-        switch(Personagem)
+
+        if (Mago == true && Guerreiro == false)
         {
-            case 1:
-                print("Guerreiro Escolhido");
-            break;
+            print("Mago escolhido");
 
-            case 2:
-                print("Mago Escolhido");
-            break;
-
-                default:
-                print("Classe do personagem não encontrada");
-                break;
+        }
+        else if (Mago == false && Guerreiro == true)
+        {
+            print("Guerreiro escolhido");
+        }
+        else if (Mago && Guerreiro)
+        {
+            print("Escolha apenas um");
+        }
+        else
+        {
+            print("Não será possivel jogar");
         }
 
+        //switch(Personagem)
+        //{
+        //    case 1:
+        //        print("Guerreiro Escolhido");
+        //    break;
 
+        //    case 2:
+        //        print("Mago Escolhido");
+        //    break;
 
+        //        default:
+        //        print("Classe do personagem não encontrada");
+        //        break;
+        //}
     }
 
 
