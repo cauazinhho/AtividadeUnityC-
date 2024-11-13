@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc7b58d70e1626949ac44b87f0aa49c4
+guid: 87365f8e4bcd46b45a9a35b29d415e67
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dwarf_m_run_anim_f2_0
+      name: rock_1_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 14
-        height: 22
+        x: 0
+        y: 0
+        width: 20
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e623e4e2aeddfc64da546c221def5ea1
-      internalID: -1613393348
+      spriteID: 24141865356dae6488250c5cdcee107e
+      internalID: 1533141780
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dwarf_m_run_anim_f2_0: -1613393348
+      rock_1_0: 1533141780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
